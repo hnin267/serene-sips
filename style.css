@@ -6,9 +6,12 @@
   background-color: #e4d6bb;
   color: #49281a;
 }
+html {
+  scroll-behavior: smooth;
+}
 /* header section */
 header {
-  border: 2px solid #000;
+  /* border: 2px solid #000; */
   text-align: center;
   padding: 100px 0;
 }
