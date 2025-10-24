@@ -17,16 +17,17 @@
     <title>Serene sips</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <h1>Welcome To Serene Sips</h1>
-    </header>
-    <p>indulge in the finest coffee experience crafted just for you.</p>
+      <p>indulge in the finest coffee experience crafted just for you.</p>
     <a href="#our-menu">Explore our menu</a>
+    </header>
+    
     <!-- nav section -->
     <nav>
       <a href="#home">Home</a>
       <a href="#menu">Menu</a>
-      <a href="#about">About us</a>
+      <a href="#about-us">About us</a>
       <a href="#contact">Contact</a>
     </nav>
 
@@ -64,7 +65,7 @@
     </section>
 
     <!-- contact us -->
-    <section id="contact-us">
+    <section id="contact">
       <h2>Contact Us</h2>
       <p>
         We'd love to hear from you! Reach out to us with any questions,
@@ -72,24 +73,25 @@
       </p>
       <form action="">
         <div>
-          <label for="">Your name</label>
-          <input type="text" id="" placeholder="" required />
+          <label for="" class="form-label">Your name</label>
+          <input type="text" class="form-control"  id="" placeholder="" required />
         </div>
         <div>
-          <label for="">Your Email</label>
-          <input type="text" id="" />
+          <label for="" class="form-label">Your Email </label>
+          <input type="text" class="form-control"  />
         </div>
         <div>
-          <label for="">Your message</label>
-          <input type="text" id="" />
+          <label for="" class="form-label">Your message</label>
+          <input type="text" class="form-control" />
         </div>
-        <input type="submit" value="Send Message" />
+        <input  class="btn-submit" type="submit" value="Send Message" />
       </form>
     </section>
 
     <!-- footer section -->
     <footer>
       <p>Copyright &2024. All right reserved.</p>
+      <a href="#header">to top</a>
     </footer>
   </body>
 </html>
