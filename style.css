@@ -13,12 +13,25 @@ html {
 header {
   /* border: 2px solid #000; */
   text-align: center;
-  padding: 100px 0;
+  position: relative;
 }
+
 header img {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
+.explore-link {
+  position: absolute;
+  top: 80%;
+  left: 70%;
+  padding: 15px 30px;
+  border-radius: 9px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
 header h1 {
   font-family: "Playfair Display SC", serif;
   font-size: 3rem;
@@ -42,6 +55,8 @@ header a {
 /* nav */
 nav {
   /* border: 2px solid #000; */
+  position: sticky;
+  top: 0;
   font-family: "Lato", sans-serif;
   font-size: 1.2rem;
   text-align: center;
@@ -84,8 +99,12 @@ footer {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 2px solid #000;
   width: 300px;
+  height: 500px;
   background-color: wheat;
   padding: 20px;
   border-radius: 10px;
@@ -93,23 +112,29 @@ footer {
 
 .card-img-top {
   max-width: 100%;
+  height: 200px;
   border-radius: 9px;
 }
 .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   font-family: Verdana, serif;
 }
 .card-text {
   line-height: 1.5;
+  flex-grow: 1;
 }
 .btn-order {
-  padding: 10px 20px;
+  padding: 15px;
   background-color: #000;
   color: white;
   text-decoration: none;
   border-radius: 9px;
   margin-top: 5px;
   display: inline-block;
+  width: 100%;
 }
 
 /* about us section */
